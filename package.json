@@ -1,6 +1,6 @@
 {
   "name": "@tgnu/utils",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Shared code for Nuxt modules.",
   "repository": "https://github.com/TenshiGoan/tgnu-utils.git",
   "author": "TenshiGoan <angelgoan@gmail.com>",
