@@ -1,6 +1,6 @@
 {
   "name": "@tgnu/utils",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Shared code for Nuxt modules.",
   "repository": "https://github.com/TenshiGoan/tgnu-utils.git",
   "author": "TenshiGoan <angelgoan@gmail.com>",
@@ -14,13 +14,13 @@
   },
   "exports": {
     ".": {
-      "require": "./dits/index.js",
-      "import": "./dits/index.mjs"
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
     }
   },
   "main": "dist/index.js",
   "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "types": "index.d.ts",
   "files": [
     "dist",
     "types",
