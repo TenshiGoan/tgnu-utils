@@ -1,4 +1,3 @@
-import { useNuxt } from "@nuxt/kit-edge";
 import { useNitroRollupBefore } from "./useNitroRollupBefore";
 import { UnpluginInstance } from "unplugin";
 
