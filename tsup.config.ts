@@ -7,5 +7,12 @@ export default defineConfig({
 
   format: ["esm", "cjs"],
   entryPoints: ["src/index.ts"],
-  external: [],
+  external: [
+    "@nuxt/kit-edge",
+    "pathe",
+    "unplugin",
+    "crypto",
+    "fs",
+    "magic-string",
+  ],
 });

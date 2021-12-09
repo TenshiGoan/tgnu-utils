@@ -1,16 +1,10 @@
-import {
-  useNuxt,
-  tryResolvePath,
-  addServerMiddleware,
-  addTemplate,
-} from "@nuxt/kit-edge";
-import { PathLike } from "fs";
-import { resolve, normalize, relative } from "pathe";
+import { useNuxt } from "@nuxt/kit-edge";
+import { resolve, normalize } from "pathe";
 import { createUnplugin } from "unplugin";
 import { addNitroPlugin } from "./addNitroPlugin";
 import { randomUUID } from "crypto";
 import FS from "fs";
-import { useNitroRollupBefore } from ".";
+import { useNitroRollupBefore } from "./useNitroRollupBefore";
 
 type VirtualMiddleware = {
   src?: string;
