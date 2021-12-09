@@ -24,6 +24,7 @@
   "files": [
     "dist",
     "types",
+    "template",
     "*.d.ts"
   ],
   "dependencies": {
