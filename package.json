@@ -1,0 +1,42 @@
+{
+  "name": "@tgnu/utils",
+  "version": "0.1.1",
+  "description": "Shared code for Nuxt modules.",
+  "repository": "https://github.com/TenshiGoan/tgnu-utils.git",
+  "author": "TenshiGoan <angelgoan@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch src",
+    "prepublishOnly": "npm run build",
+    "release": "npx bumpp --commit --tag --push && npm publish"
+  },
+  "exports": {
+    ".": {
+      "require": "./dits/index.js",
+      "import": "./dits/index.mjs"
+    }
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "types",
+    "*.d.ts"
+  ],
+  "dependencies": {
+    "@nuxt/kit": "^0.8.1-edge",
+    "@nuxt/types": "^2.15.8",
+    "@types/node": "^16.11.12",
+    "magic-string": "^0.25.7",
+    "tsup": "^5.10.3",
+    "typescript": "^4.5.2",
+    "unplugin": "^0.2.21"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
