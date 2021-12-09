@@ -1,13 +1,9 @@
 import { useNitroRollupBefore } from "./useNitroRollupBefore";
-import { UnpluginInstance } from "unplugin";
+import { RollupPlugin } from "unplugin";
 
-type Plugin<T> = UnpluginInstance<T>["rollup"];
-type Handle<T> = (context: any) => Plugin<T> | null;
+type Handle = (context: any) => RollupPlugin | null;
 
-export function addNitroPlugin<T>(
-  handler: Handle<T> | Plugin<T>,
-  front = false
-) {
+export function addNitroPlugin(handler: Handle | RollupPlugin, front = false) {
   useNitroRollupBefore((context: any) => {
     let plugin = typeof handler === "function" ? handler(context) : handler;
     if (!plugin) {
