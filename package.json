@@ -29,12 +29,16 @@
   ],
   "dependencies": {
     "@nuxt/kit": "^0.8.1-edge",
-    "@nuxt/types": "^2.15.8",
-    "@types/node": "^16.11.12",
     "magic-string": "^0.25.7",
-    "tsup": "^5.10.3",
-    "typescript": "^4.5.2",
     "unplugin": "^0.2.21"
+  },
+  "devDependencies": {
+    "@types/lodash.debounce": "^4.0.6",
+    "@types/node": "^16.11.12",
+    "@nuxt/types": "^2.15.8",
+    "typescript": "^4.5.2",
+    "lodash.debounce": "^4.0.8",
+    "tsup": "^5.10.3"
   },
   "publishConfig": {
     "access": "public",

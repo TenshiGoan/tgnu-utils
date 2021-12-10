@@ -12,6 +12,7 @@ export default defineConfig({
     "pathe",
     "unplugin",
     "crypto",
+    "globby",
     "fs",
     "magic-string",
   ],
